@@ -38,7 +38,7 @@ public class Consumer101 {
         consumer.subscribe(Collections.singleton(topic));
         // Poll Data
 
-        while (true) {
+        while (true) { //not a good practice in real life. Just added for testing.
             ConsumerRecords<String, String> records = consumer.poll(duration);
             for (ConsumerRecord<String, String> record : records
             ) {

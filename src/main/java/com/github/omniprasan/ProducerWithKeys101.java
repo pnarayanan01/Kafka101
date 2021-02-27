@@ -45,7 +45,7 @@ public class ProducerWithKeys101 {
                 } else {
                     logger.error("Error while producing" + e);
                 }
-            }).get(); //block the send to make it sync.
+            }).get(); //block the send to make it sync. //not a good practice in real life. Just added for testing.
         }
         //flush data
         producer.flush();
